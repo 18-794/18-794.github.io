@@ -1,0 +1,371 @@
+<head>
+<meta charset="utf-8">
+<title>CMU 18-794</title>
+
+<link href="bootstrap.css" rel="stylesheet">
+</head>
+
+<style>
+.course-card table {
+    font-size: 100%;
+    margin: 1em 0;
+}
+.course-card table tr td {
+    padding-right: 1em;
+}
+.course-card {
+    font-size: 100%;
+    margin-bottom: 3em;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+</style>
+
+<body>
+<div class="container">
+
+<div class="course-card clearfix">
+<h1>18-794: Introduction to Deep Learning and Pattern Recognition for Computer Vision</h1>
+<h3>Instructor</h3>
+<table cellspacing="10">
+    <tr>
+        <td><a href="https://www.ece.cmu.edu/directory/bios/savvides-marios.html">Prof. Marios Savvides</a></td>
+        <td>marioss@andrew.cmu.edu</td>
+    </tr>
+</table>
+
+<h4>TAs</h4>
+<table cellspacing="10">
+    <tr><td>Zhantao Yang</td><td>zhantaoy@andrew.cmu.edu</td></tr>
+    <tr><td>Alex Liao</td><td>jiangmel@andrew.cmu.edu</td></tr>
+    <tr><td>Han Zhang</td><td>hanz3@andrew.cmu.edu</td></tr>
+    <tr><td>Can Xu</td><td>canxu@andrew.cmu.edu</td></tr>
+    <tr><td>Fangyi Chen</td><td>fangyic@andrew.cmu.edu</td></tr>
+    <tr><td>Kai Qiu</td><td>kaiqiu@andrew.cmu.edu</td></tr>
+</table>
+
+<h3>Lecture</h3>
+<table cellspacing="10">
+    <tr><td>Pittsburgh</td><td>Fridays</td><td>1:00 PM - 3:50 PM ET</td><td>GHC 4307</td></tr>
+</table>
+
+<h3>Recitation</h3>
+<table cellspacing="10">
+    <tr><td>Pittsburgh</td><td>Mondays</td><td>4:00 PM - 4:50 PM ET</td><td>SH 236</td></tr>            
+</table>
+
+<h3> Office Hours</h3>
+<table cellspacing="10">
+    <tr><td>Zhantao Yang</td><td>Tuesday</td><td>3:00 PM - 4:00 PM ET</td><td>CIC 1308</td></tr>
+    <tr><td>Alex Liao</td><td>Monday</td><td>5:00 PM - 6:00 PM ET</td><td>CIC 1308</td></tr>
+    <tr><td>Han Zhang</td><td>Friday</td><td>4:30 PM - 5:30 PM ET</td><td>CIC 1308</td></tr>
+    <tr><td>Can Xu</td><td>Wednesday</td><td>3:00 PM - 4:00 PM ET</td><td>CIC 1308</td></tr>
+    <tr><td>Fangyi Chen</td><td>Tuesday</td><td>4:00 PM - 5:00 PM ET</td><td>CIC 1308</td></tr>
+    <tr><td>Kai Qiu</td><td>Thursday</td><td>12:00 PM - 1:00 PM ET</td><td>CIC 1308</td></tr>
+</table>
+
+</div>
+
+<div class="main">
+
+<h3>Course Description</h3>
+<p class="p1">Introduction to Deep Learning and Pattern Recognition for Computer Vision will focus on Deep Learning algorithms used in Computer Vision applications while explaining the pattern recognition aspect of these algorithms.  The first half of this course is also available as a mini (18-790) which introduces students to the basic Deep Learning ML techniques in the course. The course will introduce Neural networks and how they perform recognition and their evolution to Deep Neural Networks. Different DNN backbone architectures (e.g. VGG, ResNet + variations, MobileNets etc.) used for classification. We will overview DL architectures for object detection (to include a large range of algorithms such as anchor-based and anchor-free, single-stage, and two-stage as well as well-known Yolo, SSD, FCOS, CornerNet, Mask-RCNN, DETR and others). We cover object recognition, and semantic segmentation (with applications in robot vision, autonomous driving, general scene understanding, and medical analysis). Other topics include instance segmentation, loss functions, feature extraction, Transformers, Generative Models, Diffusion Models, Large Language Models, MMLMs, Neural Architecture Search (NAS), low form factor Deep Learning architectures for embedded platforms (e.g., Jetson Nano, AGX), TensorRT for model optimization on Nvidia embedded platforms, and ONNX model conversions.</p>
+
+<h3>Prerequisites</h3>
+<p>This course is intended for graduate students and qualified undergraduate students with a strong mathematical and programming background. 
+    Prerequisite courses include: 10-601 or equivalent machine learning course, 36-217, or equivalent probability theory and random variables course and introductory linear algebra course and senior or graduate standing.        
+</p>
+
+<h3>Textbooks</h3>
+There will be no required textbooks, though we suggest the
+following to help you to study (all available online):
+<ul>
+    <li><a href="https://ebookcentral.proquest.com/lib/cm/detail.action?docID=6287197&query=Deep%20Learning%20Book%20by%20Ian%20Goodfellow,%20Yoshua%20Bengio%20and%20Aaron%20Courville" target="_blank">Deep Learning Book by Ian Goodfellow, Yoshua Bengio and Aaron Courville</a> Online access is free through CMU’s library. Note that to access the library, you may need to be on CMU’s network or VPN. </li>
+    <li><a href="https://isip.piconepress.com/courses/temple/ece_4822/resources/books/Deep-Learning-with-PyTorch.pdf" target="_blank">Deep Learning with PyTorch by Eli Stevens, Luca Antiga, and Thomas Viehmann </a></li>
+</ul>
+
+<h3>Brief List of Topics Covered in Course</h3>
+<ul>
+    <li>Introduction to Neural Networks</li>
+    <li>Evolution of Deep Neural Networks</li>
+    <li>Convolutional Neural Networks</li>
+    <li>Different DNN backbone architectures</li>
+    <li>Object Recognition</li>
+    <li>Object Detection</li>
+    <li>Image Segmentation</li>
+    <li>Transformers</li>
+    <li>Generative Modeling</li>
+    <li>Multi Modality Learning</li>
+    <li>Low form factor Deep Learning architectures for embedded platforms</li>
+    <li>Pretraining, Transfer Learning, and Finetuning</li>
+    <li>TensorRT for model optimization and ONNX model conversions</li>
+</ul>
+
+<h3>Homeworks</h3>
+<p>There will be 4 homework programming assignments as part of this course. All assignments will be designed to work over AWS cloud platform using academic credits. </p>
+<p>Following are the topics covered in homework assignments: 
+    Hands-on development and training of multilayer perceptron and Convolutional neural networks. Object Detection, Image Segmentation, Generative Modeling.
+    </p>
+
+<h3>Final Project</h3>
+    <p>The final project represents a big part of this course. It will constitute a team effort(teams of 2 or 3) and will include a written feasibility study(project proposal document), a written progress review(mid-term report), a NeurIPS-style final paper(final report), poster presentation and a live demo (either via poster or presentation). 
+        Detailed guidelines for the final project will be presented in an individual announcement. 
+        </p>
+
+<h3>Slack</h3>
+    <p> We will use Slack for class discussions. Please join the course slack to join the course forum (note: you must use a cmu.edu email account to join the slack group). We strongly encourage students to post on this rather than emailing the course staff directly (this will be more efficient for both students and staff). Students should use Slack to:
+    <ul>
+        <li>Ask clarifying questions about the course material.</li>
+        <li>Share useful resources with classmates (so long as they do not
+        contain homework solutions).</li>
+        <li>Look for students to form study groups.</li>
+        <li>Answer questions posted by other students to solidify your own
+        understanding of the material.</li>
+    </ul>
+    The course Academic Integrity Policy must be followed on the message boards at all times. <b>Do not post or request homework solutions!</b> Also, please be polite.
+    
+<h3>Grading Policy</h3>
+<p> Grades will be based on the following components:
+<ul>
+    <li> <b>Homework Sets (45%)</b>: There will be 4 homeworks. Each homework will have equal weight. All assignments will be designed to work over AWS cloud platform using academic credits. 
+    <ul>
+        <li><b>Late submissions will not be accepted</b>.
+        <li><i>There is one exception to this rule</i>: You are given 5 "late days" (self-granted 24-hr extensions) which you can use to give yourself extra time without penalty. <b>At most two late days can be used per assignment.</b> This will be monitored automatically via Gradescope.</li>
+        <li> Solutions will be graded on both correctness and clarity. If
+        you cannot solve a problem completely, you will get more partial
+        credit by identifying the gaps in your argument than by
+        attempting to cover them up.
+    </ul>
+    <li><b>Final Project (45%)</b></li>
+    <ul>
+        <li>Feasibility Study 5%
+        <li>Mid Progress Review 5%
+        <li>Noval research and potential for future impact 5%
+        <li>Project work and performance 30%
+    </ul>
+    <li><b>Class participation 5% </b></li>
+</ul>
+<p><b>Collaboration Policy:</b> Homework should reflect an individual effort. Each student must hand in his/her own answers. Each student must also write his/her own code for the programming assignments.<b> If you get help from a fellow classmate, indicate with whom you collaborated at the top of your homework. </b> You should take the responsibility to personally understand all the material you hand in. 
+</p>
+
+<p><b>Gradescope:</b> We will use Gradescope to collect PDF submissions of each problem set. Upon uploading your PDF, Gradescope will ask you to identify which page(s) contains your solution for each problem - this is a great way to double check that you haven't left anything out. The course staff will manually grade your submission, and you'll receive feedback explaining your final marks.<p/>
+
+<b>Regrade Requests:</b> If you believe an error was made during grading, you'll be able to submit a regrade request on Gradescope. <i>For each homework, regrade requests will be open for only 1 week after the grades have been published.</i> This is to encourage you to check the feedback you've received early!
+
+<h3>Academic Integrity Policy</h3>
+Group studying and collaborating on problem sets are encouraged, as
+working together is a great way to understand new material.  Students
+are free to discuss the homework problems with anyone under the
+following conditions:
+<ul>
+    <li>Students must write their own solutions and understand the
+    solutions that they wrote down.</li>
+    <li>Students must list the names of their collaborators (i.e., anyone
+    with whom the assignment was discussed).</li>
+    <li>Students may not use old solution sets from other classes under any circumstances, unless the instructor grants
+    special permission.</li>
+</ul>
+
+Students are encouraged to read CMU's <a href=https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html target="_blank"> Academic Integrity Policy</a>.
+
+<h3>Using LaTeX</h3>
+<p> Students are strongly encouraged to use LaTeX for problem sets.  LaTeX makes it
+simple to typeset mathematical equations and is extremely useful for
+graduate students to know. Most of the academic papers you read were
+written with LaTeX, and probably most of the textbooks too. <a
+  href=http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf
+  target="_blank">Here</a> is an excellent LaTeX tutorial and <a
+  href=http://latex-project.org/ftp.html target="_blank">here</a> are
+instructions for installing LaTeX on your machine.
+</p>
+
+<h3>Acknowledgments</h3>
+<p> This course is based in part on material developed by Marios Savvides (CMU). The course website follows the template of <a href=https://18661.github.io target="_blank">18661</a></p>
+
+<hr>
+
+<h3>Schedule (Subject to Change)</h3>
+<div class="bs-example">
+<table class="table">
+<thead>
+    <tr><th>Date</th><th>Topics</th><th>Assignment</th><th>Due Date</th></tr>
+</thead>
+<tbody>
+    <tr class="active">
+        <td>8/26 Mon.</td>
+        <td>No Recitation</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>8/30 Fri.</td>
+        <td>Lecture: Introduction to Course + Feature Extraction + Dimensionality Reduction</td>
+        <td>Project Groups</td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>9/2 Mon.</td>
+        <td>Recitation: No Class due to Labor Day</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>9/6 Fri.</td>
+        <td>Lecture: PCA Review + LDA + SVM + ANNs</a></td>
+        <td>Project Proposal</td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>9/9 Mon.</td>
+        <td>Recitation: PyTorch Tutorial / Project Topic Q&A</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>9/13 Fri.</td>
+        <td>Lecture: Introduction to Deep Learning</a></td>
+        <td>HW1 Release</td>
+        <td>Project Proposal</td>
+    </tr>
+    <tr class="active">
+        <td>9/16 Mon.</td>
+        <td>Recitation: Working with AWS</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>9/20 Fri.</td>
+        <td>Lecture: Deep Learning based Image Classification</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>9/23 Mon.</td>
+        <td>Recitation: Image Classification</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>9/27 Fri.</td>
+        <td>Lecture: Deep Learning based Object Detection I</a></td>
+        <td>HW2 Release</td>
+        <td>HW1 Due</td>
+    </tr>
+    <tr class="active">
+        <td>9/30 Mon.</td>
+        <td>Recitation: Object Detection</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>10/4 Fri.</td>
+        <td>Lecture: Deep Learning based Object Detection II </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>10/7 Mon.</td>
+        <td>Recitation: Yet to be decided</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>10/11 Fri.</td>
+        <td>Lecture: Image Segmentation </a></td>
+        <td>HW3 Release & Project Midterm Report</td>
+        <td>HW2 Due</td>
+    </tr>
+    <tr class="active">
+        <td>10/14 Mon.</td>
+        <td>Recitation: No Class due to Fall Break </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>10/18 Fri.</td>
+        <td>Lecture: No Class due to Fall Break </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>10/21 Mon.</td>
+        <td>Recitation: Image Segmentation </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>10/25 Fri.</td>
+        <td>Lecture: Multimodality Learning </a></td>
+        <td></td>
+        <td>Midterm Report Due</td>
+    </tr>
+    <tr class="active">
+        <td>10/28 Mon.</td>
+        <td>Recitation: Multimodality Learning </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>11/1 Fri.</td>
+        <td>Lecture: Generative Modeling I </a></td>
+        <td>HW4 Release</td>
+        <td>HW3 Due</td>
+    </tr>
+    <tr class="active">
+        <td>11/4 Mon.</td>
+        <td>Recitation: Generative Modeling </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>11/8 Fri.</td>
+        <td>Lecture: Generative Modeling II </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="success">
+        <td>11/15 Fri.</td>
+        <td>Lecture: Pretraining, Transfer Learning and Finetuning </a></td>
+        <td>Final Report</td>
+        <td>HW4 Due</td>
+    </tr>
+    <tr class="active">
+        <td>11/22 Fri.</td>
+        <td>Lecture: Model Optimization </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>11/29 Fri.</td>
+        <td>Lecture: No Class due to Thanksgiving </a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>12/6 Fri.</td>
+        <td>Project Presentation Week </a></td>
+        <td>Poster Session</td>
+        <td></td>
+    </tr>
+    <tr class="active">
+        <td>12/13 Fri.</td>
+        <td>Project Presentation Week </a></td>
+        <td>Poster Session</td>
+        <td></td>
+    </tr>
+</tbody>
+</table>
+</div>
+<hr>
+</div>
+
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
